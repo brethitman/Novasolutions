@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<!-- ======================================================== -->
+<!-- HERO SECTION -->
+<!-- ======================================================== -->
+<section class="min-h-[550px] md:min-h-[650px] bg-gradient-to-r from-blue-900 to-sky-500 flex items-center justify-center relative overflow-hidden py-12 md:py-16">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay bg-[url('{% static "img/Hvac2.png" %}')]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+
+    <div class="text-center text-white max-w-5xl px-4 sm:px-6 relative z-10 w-full">
+        <div class="inline-block bg-white/10 border border-white/20 text-sky-100 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4 sm:mb-6">
+            {% translate "24/7 Professional Technical Service in Maryland" %}
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 sm:mb-6 leading-tight tracking-tight">
+            {% translate "Reliable Solutions for HVAC, Commercial Refrigeration and Ice Systems" %}
+        </h1>
+
+        <p class="text-sm sm:text-lg md:text-xl mb-4 sm:mb-6 text-sky-100 max-w-3xl mx-auto leading-relaxed px-2">
+           {% translate "Professional service for air conditioning, heating, refrigeration, ice machines, and preventive maintenance." %}
+        </p>
+
+        <p class="text-[11px] sm:text-sm md:text-base text-sky-100/80 max-w-2xl mx-auto mb-8 sm:mb-10 px-4">
+            {% translate "Advanced Diagnostics • Preventive Maintenance • Emergency Repairs • Energy Optimization" %}
+        </p>
+
+        <!-- TWO SIDE-BY-SIDE HERO BUTTONS DIRECTING TO FORM SECTION -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto px-4 sm:px-0">
+            <!-- Request a Quote (Red Button) -->
+            <a href="{% url 'contact' %}#contact-form" class="w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-lg transition duration-300 text-center text-sm sm:text-base">
+                {% translate "Request a Quote" %}
+            </a>
+           
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- MAIN SERVICES SECTION -->
+<!-- ======================================================== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+    <div class="text-center mb-10 sm:mb-12 md:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-3 sm:mb-4">
+            {% translate "Our Core Services" %}
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
+            {% translate "Specialized technical solutions for commercial and industrial systems." %}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <!-- HVAC -->
+        <div class="bg-white border border-gray-100 shadow-xl rounded-3xl overflow-hidden md:hover:-translate-y-2 transition duration-300">
+            <div class="overflow-hidden cursor-pointer">
+                <img src="{% static 'img/Hvac1.png' %}" class="w-full h-48 sm:h-64 md:h-72 object-cover transition duration-500 hover:scale-105 src-gallery" alt="HVAC">
+            </div>
+            <div class="p-5 sm:p-8">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3">HVAC</h3>
+                <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
+                    {% translate "Installation and maintenance of air conditioning systems." %}
+                </p>
+                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                    {% translate "Learn more" %}
+                </a>
+            </div>
+        </div>
+
+        <!-- COMMERCIAL REFRIGERATION -->
+        <div class="bg-white border border-gray-100 shadow-xl rounded-3xl overflow-hidden md:hover:-translate-y-2 transition duration-300">
+            <div class="overflow-hidden cursor-pointer">
+                <img src="{% static 'img/Refrigeración9.png' %}" class="w-full h-48 sm:h-64 md:h-72 object-cover transition duration-500 hover:scale-105 src-gallery" alt="Commercial Refrigeration">
+            </div>
+            <div class="p-5 sm:p-8">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3">{% translate "Commercial Refrigeration" %}</h3>
+                <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
+                    {% translate "Walk-in coolers and industrial refrigeration systems." %}
+                </p>
+                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                    {% translate "Learn more" %}
+                </a>
+            </div>
+        </div>
+
+        <!-- ICE MACHINES -->
+        <div class="bg-white border border-gray-100 shadow-xl rounded-3xl overflow-hidden md:hover:-translate-y-2 transition duration-300">
+            <div class="overflow-hidden cursor-pointer">
+                <img src="{% static 'img/Ice1.png' %}" class="w-full h-48 sm:h-64 md:h-72 object-cover transition duration-500 hover:scale-105 src-gallery" alt="Ice Machines">
+            </div>
+            <div class="p-5 sm:p-8">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3">{% translate "Ice Machines" %}</h3>
+                <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
+                    {% translate "Maintenance and repair of commercial ice equipment." %}
+                </p>
+                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                    {% translate "Learn more" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- COMMERCIAL SECTORS SECTION -->
+<!-- ======================================================== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+    <div class="text-center mb-10 sm:mb-12 md:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-3 sm:mb-4">
+            {% translate "Commercial Sectors That Trust Us" %}
+        </h2>
+        <p class="text-xs sm:text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+            {% translate "We guarantee the perfect temperature and infrastructure for all types of businesses and industries." %}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+        <!-- Offices -->
+        <div class="bg-slate-50 p-5 sm:p-6 md:p-8 rounded-3xl border border-gray-100 text-center md:hover:shadow-xl transition duration-300">
+            <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">🏢</div>
+            <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-1 sm:mb-2">{% translate "Offices & Corporate" %}</h4>
+            <p class="text-xs sm:text-sm text-gray-600">{% translate "Optimal climate control to ensure the comfort and productivity of your team." %}</p>
+        </div>
+
+        <!-- Restaurants -->
+        <div class="bg-slate-50 p-5 sm:p-6 md:p-8 rounded-3xl border border-gray-100 text-center md:hover:shadow-xl transition duration-300">
+            <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">🍳</div>
+            <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-1 sm:mb-2">{% translate "Restaurants & Kitchens" %}</h4>
+            <p class="text-xs sm:text-sm text-gray-600">{% translate "Exhaust systems, refrigeration, and ice machines operating at 100% without downtime." %}</p>
+        </div>
+
+        <!-- Clinics -->
+        <div class="bg-slate-50 p-5 sm:p-6 md:p-8 rounded-3xl border border-gray-100 text-center md:hover:shadow-xl transition duration-300">
+            <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">🏥</div>
+            <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-1 sm:mb-2">{% translate "Clinics & Hospitals" %}</h4>
+            <p class="text-xs sm:text-sm text-gray-600">{% translate "Strict control of ambient temperature and critical preservation of medical supplies." %}</p>
+        </div>
+
+        <!-- Supermarkets -->
+        <div class="bg-slate-50 p-5 sm:p-6 md:p-8 rounded-3xl border border-gray-100 text-center md:hover:shadow-xl transition duration-300">
+            <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">🏬</div>
+            <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-1 sm:mb-2">{% translate "Supermarkets & Retail" %}</h4>
+            <p class="text-xs sm:text-sm text-gray-600">{% translate "Stable cold rooms and refrigerated displays to prevent product loss." %}</p>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- WORK PROCESS SECTION -->
+<!-- ======================================================== -->
+<section class="bg-gradient-to-r from-blue-900 to-sky-500 text-white py-12 sm:py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-3 sm:mb-4">{% translate "How Do We Work?" %}</h2>
+            <p class="text-xs sm:text-sm md:text-base text-sky-100 max-w-xl mx-auto px-2">{% translate "A streamlined and transparent process designed to solve your technical issues without wasting time." %}</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white/10 border border-white/20 p-5 sm:p-6 md:p-8 rounded-3xl relative">
+                <span class="absolute top-3 right-5 sm:top-4 sm:right-6 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white/10">01</span>
+                <h4 class="text-base sm:text-lg md:text-xl font-bold mb-2 text-sky-200">{% translate "Contact" %}</h4>
+                <p class="text-xs sm:text-sm text-sky-100/90">{% translate "Write or call us. We will schedule a technical onsite visit immediately based on your urgency." %}</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white/10 border border-white/20 p-5 sm:p-6 md:p-8 rounded-3xl relative">
+                <span class="absolute top-3 right-5 sm:top-4 sm:right-6 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white/10">02</span>
+                <h4 class="text-base sm:text-lg md:text-xl font-bold mb-2 text-sky-200">{% translate "Diagnosis" %}</h4>
+                <p class="text-xs sm:text-sm text-sky-100/90">{% translate "Our certified technicians evaluate the equipment on-site and locate the root cause of the failure." %}</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white/10 border border-white/20 p-5 sm:p-6 md:p-8 rounded-3xl relative">
+                <span class="absolute top-3 right-5 sm:top-4 sm:right-6 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white/10">03</span>
+                <h4 class="text-base sm:text-lg md:text-xl font-bold mb-2 text-sky-200">{% translate "Fair Quote" %}</h4>
+                <p class="text-xs sm:text-sm text-sky-100/90">{% translate "We present a transparent, detailed budget proposal free of any hidden charges." %}</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white/10 border border-white/20 p-5 sm:p-6 md:p-8 rounded-3xl relative">
+                <span class="absolute top-3 right-5 sm:top-4 sm:right-6 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white/10">04</span>
+                <h4 class="text-base sm:text-lg md:text-xl font-bold mb-2 text-sky-200">{% translate "Solution & Warranty" %}</h4>
+                <p class="text-xs sm:text-sm text-sky-100/90">{% translate "We perform the repair with original spare parts and provide full warranty coverage backup." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- WHY CHOOSE US SECTION -->
+<!-- ======================================================== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+    <div class="text-center mb-10 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900 mb-4">
+            {% translate "Why Choose Us" %}
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">🤝</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Honest and professional service" %}
+            </h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">🔍</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Clear diagnosis" %}
+            </h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">✨</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Clean and responsible work" %}
+            </h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">🏢</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Residential and commercial support" %}
+            </h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">🏆</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Commitment to quality" %}
+            </h4>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center md:hover:shadow-md transition duration-300">
+            <div class="text-2xl mb-2">⚙️</div>
+            <h4 class="text-lg font-bold text-slate-800">
+                {% translate "Efficient and durable solutions" %}
+            </h4>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- LIGHTBOX MODAL FOR FULL SCREEN PREVIEW -->
+<!-- ======================================================== -->
+<div id="imageModal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out p-4">
+    <button id="closeModal" class="absolute top-4 right-4 text-white text-3xl font-light hover:text-gray-300 transition focus:outline-none z-50">&times;</button>
+    <img id="modalImg" class="max-w-full max-h-[85vh] md:max-h-[90vh] rounded-lg object-contain transform scale-95 transition-transform duration-300 ease-in-out" src="" alt="Full Screen Preview">
+</div>
+
+<!-- ======================================================== -->
+<!-- INTERACTIVE JAVASCRIPT LOGIC -->
+<!-- ======================================================== -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const images = document.querySelectorAll(".src-gallery");
+
+        // Open lightbox on gallery image clicks
+        images.forEach(img => {
+            img.addEventListener("click", function() {
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                
+                modal.classList.remove("opacity-0", "pointer-events-none");
+                setTimeout(() => {
+                    modalImg.classList.remove("scale-95");
+                }, 10);
+            });
+        });
+
+        // Hide full screen view function
+        function hideModal() {
+            modal.classList.add("opacity-0", "pointer-events-none");
+            modalImg.classList.add("scale-95");
+        }
+
+        // Close when clicking overlay backdrop background area
+        modal.addEventListener("click", function(e) {
+            if (e.target !== modalImg) {
+                hideModal();
+            }
+        });
+
+        // Close on escape hotkey push
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                hideModal();
+            }
+        });
+    });
+</script>
+
+{% endblock %}

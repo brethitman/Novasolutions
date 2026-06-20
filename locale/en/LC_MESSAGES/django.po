@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-18 15:43-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\config\settings.py:96
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:97
+msgid "Spanish"
+msgstr ""
+
+#: .\templates\base.html:49
+msgid "Home"
+msgstr ""
+
+#: .\templates\base.html:54
+msgid "About"
+msgstr ""
+
+#: .\templates\base.html:59
+msgid "Services"
+msgstr ""
+
+#: .\templates\base.html:64
+msgid "Contact"
+msgstr ""
+
+#: .\templates\base.html:69
+msgid "Language:"
+msgstr ""
+
+#: .\templates\base.html:112
+msgid "HVAC • Refrigeration • Maintenance Services"
+msgstr ""
+
+#: .\templates\base.html:116
+msgid "Reliable service. Professional solutions."
+msgstr ""
+
+#: .\templates\base.html:120
+msgid "All rights reserved."
+msgstr ""
+
+#: .\templates\contact.html:5
+msgid "Contact Us | Nova Solutions LLC"
+msgstr ""
+
+#: .\templates\contact.html:12
+msgid "Language / Idioma:"
+msgstr ""
+
+#: .\templates\contact.html:32
+msgid "Ponte en Contacto con Nosotros"
+msgstr ""
+
+#: .\templates\contact.html:35
+msgid ""
+"Estamos listos para solucionar tus necesidades de HVAC, refrigeración "
+"comercial y mantenimiento técnico."
+msgstr ""
+
+#: .\templates\contact.html:48
+msgid "Información de Contacto"
+msgstr ""
+
+#: .\templates\contact.html:51
+msgid ""
+"Comunícate con nuestro team técnico para cotizaciones, soporte de emergencia "
+"o consultas sobre contratos de mantenimiento preventivo."
+msgstr ""
+
+#: .\templates\contact.html:65
+msgid "Llámanos directamente"
+msgstr ""
+
+#: .\templates\contact.html:80
+msgid "Correo electrónico"
+msgstr ""
+
+#: .\templates\contact.html:95
+msgid "Dirección"
+msgstr ""
+
+#: .\templates\contact.html:109
+msgid "Horarios de Atención"
+msgstr ""
+
+#: .\templates\contact.html:113
+msgid "Lunes a Viernes:"
+msgstr ""
+
+#: .\templates\contact.html:117
+msgid "Sábados:"
+msgstr ""
+
+#: .\templates\contact.html:121
+msgid "Domingos:"
+msgstr ""
+
+#: .\templates\contact.html:122
+msgid "Cerrado"
+msgstr ""
+
+#: .\templates\contact.html:126
+msgid "Nota:"
+msgstr ""
+
+#: .\templates\contact.html:126
+msgid ""
+"Para clientes con contratos de mantenimiento preventivo activo, disponemos "
+"de soporte técnico prioritario fuera de horario."
+msgstr ""
+
+#: .\templates\contact.html:137
+msgid "Envíanos un Mensaje"
+msgstr ""
+
+#: .\templates\contact.html:140
+msgid ""
+"Completa el siguiente formulario y un especialista se pondrá en contacto "
+"contigo en menos de 24 horas hábiles."
+msgstr ""
+
+#: .\templates\contact.html:162
+msgid "Nombre Completo"
+msgstr ""
+
+#: .\templates\contact.html:167
+msgid "Ej. Juan Pérez"
+msgstr ""
+
+#: .\templates\contact.html:174
+msgid "Número de Teléfono"
+msgstr ""
+
+#: .\templates\contact.html:187
+msgid "Correo Electrónico"
+msgstr ""
+
+#: .\templates\contact.html:199
+msgid "¿En qué servicio estás interesado?"
+msgstr ""
+
+#: .\templates\contact.html:201
+msgid "Selecciona una opción"
+msgstr ""
+
+#: .\templates\contact.html:202
+msgid "Sistemas de HVAC (Aire Acondicionado / Calefacción)"
+msgstr ""
+
+#: .\templates\contact.html:203
+msgid "Refrigeración Comercial"
+msgstr ""
+
+#: .\templates\contact.html:204
+msgid "Mantenimiento Preventivo"
+msgstr ""
+
+#: .\templates\contact.html:205
+msgid "Máquinas de Hielo"
+msgstr ""
+
+#: .\templates\contact.html:206
+msgid "Otro Asunto / Consulta General"
+msgstr ""
+
+#: .\templates\contact.html:212
+msgid "Detalles de tu Solicitud"
+msgstr ""
+
+#: .\templates\contact.html:217
+msgid ""
+"Escribe aquí los detalles del problema o el proyecto que deseas cotizar..."
+msgstr ""
+
+#: .\templates\contact.html:227
+msgid "Enviar Mensaje Corporativo"
+msgstr ""
+
+#: .\templates\contact.html:241
+msgid "¿Por qué confiar en Nova Solutions LLC?"
+msgstr ""
+
+#: .\templates\contact.html:242
+msgid ""
+"Comprometidos con los más altos estándares de calidad en cada llamada "
+"técnica."
+msgstr ""
+
+#: .\templates\contact.html:248
+msgid "Servicio Confiable"
+msgstr ""
+
+#: .\templates\contact.html:249
+msgid ""
+"Garantizamos transparencia total en los presupuestos técnicos y diagnósticos "
+"de fallas."
+msgstr ""
+
+#: .\templates\contact.html:253
+msgid "Técnicos Certificados"
+msgstr ""
+
+#: .\templates\contact.html:254
+msgid ""
+"Nuestro personal cuenta con el entrenamiento especializado exigido por la "
+"industria."
+msgstr ""
+
+#: .\templates\contact.html:258
+msgid "Respuesta Ágil"
+msgstr ""
+
+#: .\templates\contact.html:259
+msgid ""
+"Minimizamos los tiempos de inactividad de tus unidades comerciales de frío o "
+"calor."
+msgstr ""

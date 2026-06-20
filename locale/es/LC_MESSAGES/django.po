@@ -1,0 +1,595 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-18 19:01-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\config\settings.py:96
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:97
+msgid "Spanish"
+msgstr ""
+
+#: .\templates\about.html:5
+msgid "About Us | Nova Solutions LLC"
+msgstr ""
+
+#: .\templates\about.html:13
+msgid "About Nova Solutions LLC"
+msgstr ""
+
+#: .\templates\about.html:16
+msgid ""
+"At Nova Solutions LLC, we offer HVAC, refrigeration, and maintenance "
+"services with commitment, responsibility, and personalized attention. Our "
+"goal is to help residential and commercial clients keep their equipment "
+"running safely, efficiently, and reliably."
+msgstr ""
+
+#: .\templates\about.html:32
+msgid "Our Mission"
+msgstr ""
+
+#: .\templates\about.html:34
+msgid ""
+"To provide reliable solutions in HVAC, refrigeration, and maintenance, "
+"offering a professional, honest, and efficient service that guarantees "
+"comfort, safety, and peace of mind for our clients."
+msgstr ""
+
+#: .\templates\about.html:45
+msgid "Our Vision"
+msgstr ""
+
+#: .\templates\about.html:47
+msgid ""
+"To be a company recognized for its quality, responsibility, and "
+"trustworthiness in HVAC, refrigeration, and commercial maintenance services."
+msgstr ""
+
+#: .\templates\about.html:59
+msgid "Pillars of Our Organization"
+msgstr ""
+
+#: .\templates\about.html:60
+msgid ""
+"The corporate philosophy that guides each of our interventions in the field."
+msgstr ""
+
+#: .\templates\about.html:68
+msgid "Professional Integrity"
+msgstr ""
+
+#: .\templates\about.html:69
+msgid ""
+"We charge fairly and diagnose honestly. No unnecessary repairs or budget "
+"surprises."
+msgstr ""
+
+#: .\templates\about.html:75
+msgid "Technical Excellence"
+msgstr ""
+
+#: .\templates\about.html:76
+msgid ""
+"Constant training in new refrigeration technologies and efficiency standards "
+"to provide up-to-date answers."
+msgstr ""
+
+#: .\templates\about.html:82
+msgid "Punctuality & Respect"
+msgstr ""
+
+#: .\templates\about.html:83
+msgid ""
+"We value your time. We strictly meet scheduled visit times and delivery "
+"deadlines."
+msgstr ""
+
+#: .\templates\about.html:89
+msgid "Eco-Responsibility"
+msgstr ""
+
+#: .\templates\about.html:90
+msgid ""
+"Professional and safe handling of refrigerant gases, minimizing "
+"environmental impact and maximizing efficiency."
+msgstr ""
+
+#: .\templates\about.html:101
+msgid "Real Success Stories"
+msgstr ""
+
+#: .\templates\about.html:103
+msgid "What Our Clients Say"
+msgstr ""
+
+#: .\templates\about.html:106
+msgid ""
+"Read reviews from businesses that trust our technical team for their "
+"operational continuity."
+msgstr ""
+
+#: .\templates\about.html:123
+msgid ""
+"\"The restaurant AC failed on a Friday night in the middle of a summer "
+"heatwave. With a full house, we called for their 24/7 emergency support. The "
+"technician arrived in under an hour, diagnosed the compressor failure, and "
+"repaired it that same night, saving our weekend sales. Prompt, impeccable "
+"service with an honest price.\""
+msgstr ""
+
+#: .\templates\about.html:139
+msgid ""
+"\"We had recurring issues with the temperature of our cold storage rooms, "
+"risking valuable food supplies. Nova Solutions conducted a deep audit, "
+"detected micro-leaks that other technicians had ignored, and redesigned our "
+"preventive maintenance plan. We haven’t lost any inventory since. Extremely "
+"professional.\""
+msgstr ""
+
+#: .\templates\about.html:155
+msgid ""
+"\"Highly recommended for heavy industrial setups. We needed to optimize the "
+"energy efficiency of the chillers at our plant to reduce high electricity "
+"costs. Nova Solutions presented a clear project with no hidden fees and "
+"worked cleanly, respecting our production hours. The energy savings were "
+"immediate.\""
+msgstr ""
+
+#: .\templates\about.html:171
+msgid ""
+"\"Our commercial ice machine started acting up right before summer. The "
+"technician not only fixed the mechanical issue in minutes but also performed "
+"a deep sanitization of the water system. They explained the issue "
+"transparently and gave us maintenance tips. Excellent and educational "
+"service.\""
+msgstr ""
+
+#: .\templates\about.html:184
+msgid "Looking for Reliable, Long-Term Support?"
+msgstr ""
+
+#: .\templates\about.html:185
+msgid ""
+"Find out how our customized preventive maintenance agreements can save your "
+"business thousands of dollars annually."
+msgstr ""
+
+#: .\templates\about.html:189
+msgid "Speak with a Specialist"
+msgstr ""
+
+#: .\templates\base.html:52 .\templates\base.html:107
+msgid "Home"
+msgstr ""
+
+#: .\templates\base.html:57 .\templates\base.html:108
+msgid "About"
+msgstr ""
+
+#: .\templates\base.html:62 .\templates\base.html:109
+msgid "Services"
+msgstr ""
+
+#: .\templates\base.html:67 .\templates\base.html:110 .\templates\home.html:166
+msgid "Contact"
+msgstr ""
+
+#: .\templates\base.html:73 .\templates\base.html:114
+msgid "Language:"
+msgstr ""
+
+#: .\templates\base.html:157
+msgid "HVAC • Refrigeration • Maintenance Services"
+msgstr ""
+
+#: .\templates\base.html:161
+msgid "Reliable service. Professional solutions."
+msgstr ""
+
+#: .\templates\base.html:165
+msgid "All rights reserved."
+msgstr ""
+
+#: .\templates\contact.html:5
+msgid "Contact Us | Nova Solutions LLC"
+msgstr ""
+
+#: .\templates\contact.html:13
+msgid "Get in Touch with Us"
+msgstr ""
+
+#: .\templates\contact.html:16
+msgid ""
+"We are ready to address your HVAC, commercial refrigeration, and technical "
+"maintenance needs."
+msgstr ""
+
+#: .\templates\contact.html:27
+msgid "Contact Information"
+msgstr ""
+
+#: .\templates\contact.html:30
+msgid ""
+"Reach out to our technical team for quotes, emergency support, or inquiries "
+"regarding preventive maintenance contracts."
+msgstr ""
+
+#: .\templates\contact.html:42
+msgid "Call Us Directly"
+msgstr ""
+
+#: .\templates\contact.html:54
+msgid "Chat via WhatsApp"
+msgstr ""
+
+#: .\templates\contact.html:63 .\templates\contact.html:162
+msgid "Email Address"
+msgstr ""
+
+#: .\templates\contact.html:77
+msgid "Address"
+msgstr ""
+
+#: .\templates\contact.html:90
+msgid "Business Hours"
+msgstr ""
+
+#: .\templates\contact.html:94
+msgid "Monday to Friday:"
+msgstr ""
+
+#: .\templates\contact.html:98
+msgid "Saturdays:"
+msgstr ""
+
+#: .\templates\contact.html:102
+msgid "Sundays:"
+msgstr ""
+
+#: .\templates\contact.html:103
+msgid "Closed"
+msgstr ""
+
+#: .\templates\contact.html:107
+msgid "Note:"
+msgstr ""
+
+#: .\templates\contact.html:107
+msgid ""
+"Priority after-hours technical support is available for clients with active "
+"preventive maintenance agreements."
+msgstr ""
+
+#: .\templates\contact.html:117
+msgid "Send Us a Message"
+msgstr ""
+
+#: .\templates\contact.html:120
+msgid ""
+"Fill out the form below and a specialist will contact you within 24 business "
+"hours."
+msgstr ""
+
+#: .\templates\contact.html:139
+msgid "Full Name"
+msgstr ""
+
+#: .\templates\contact.html:144
+msgid "e.g., John Doe"
+msgstr ""
+
+#: .\templates\contact.html:150
+msgid "Phone Number"
+msgstr ""
+
+#: .\templates\contact.html:173
+msgid "Which service are you interested in?"
+msgstr ""
+
+#: .\templates\contact.html:175
+msgid "Select an option"
+msgstr ""
+
+#: .\templates\contact.html:176
+msgid "HVAC Systems (Air Conditioning / Heating)"
+msgstr ""
+
+#: .\templates\contact.html:177 .\templates\home.html:78
+msgid "Commercial Refrigeration"
+msgstr ""
+
+#: .\templates\contact.html:178
+msgid "Preventive Maintenance"
+msgstr ""
+
+#: .\templates\contact.html:179 .\templates\home.html:94
+msgid "Ice Machines"
+msgstr ""
+
+#: .\templates\contact.html:180
+msgid "Other Subject / General Inquiry"
+msgstr ""
+
+#: .\templates\contact.html:185
+msgid "Request Details"
+msgstr ""
+
+#: .\templates\contact.html:190
+msgid ""
+"Describe the details of your problem or the project you want quoted here..."
+msgstr ""
+
+#: .\templates\contact.html:199
+msgid "Send Message"
+msgstr ""
+
+#: .\templates\contact.html:212
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: .\templates\contact.html:219
+msgid "Do you offer preventive maintenance?"
+msgstr ""
+
+#: .\templates\contact.html:222
+msgid ""
+"Yes, we provide tailored protection plans for both residential and "
+"commercial equipment."
+msgstr ""
+
+#: .\templates\contact.html:228
+msgid "Do you work with commercial businesses?"
+msgstr ""
+
+#: .\templates\contact.html:231
+msgid ""
+"Yes, we service restaurants, offices, hotels, retail stores, and various "
+"other commercial facilities."
+msgstr ""
+
+#: .\templates\contact.html:237
+msgid "Do you repair commercial ice machines?"
+msgstr ""
+
+#: .\templates\contact.html:240
+msgid ""
+"Yes, we cover comprehensive diagnostics, advanced deep cleaning, component "
+"maintenance, and general repairs."
+msgstr ""
+
+#: .\templates\contact.html:246
+msgid "Do you provide project quotes?"
+msgstr ""
+
+#: .\templates\contact.html:249
+msgid ""
+"Yes, you can request a standard quote over the phone, via text message, or "
+"through our website form."
+msgstr ""
+
+#: .\templates\contact.html:258
+msgid "Why Trust Nova Solutions LLC?"
+msgstr ""
+
+#: .\templates\contact.html:259
+msgid ""
+"Committed to the highest quality standards on every single service call."
+msgstr ""
+
+#: .\templates\contact.html:265
+msgid "Reliable Service"
+msgstr ""
+
+#: .\templates\contact.html:266
+msgid ""
+"We guarantee complete transparency in both technical budgeting and breakdown "
+"diagnostics."
+msgstr ""
+
+#: .\templates\contact.html:270
+msgid "Certified Technicians"
+msgstr ""
+
+#: .\templates\contact.html:271
+msgid ""
+"Our specialized staff strictly holds the professional training background "
+"required by the industry."
+msgstr ""
+
+#: .\templates\contact.html:275
+msgid "Fast Response"
+msgstr ""
+
+#: .\templates\contact.html:276
+msgid ""
+"We actively minimize downtime for your commercial cooling or heating "
+"infrastructure."
+msgstr ""
+
+#: .\templates\home.html:16
+msgid "24/7 Professional Technical Service in Maryland"
+msgstr ""
+
+#: .\templates\home.html:20
+msgid "Reliable Solutions for HVAC, Commercial Refrigeration and Ice Systems"
+msgstr ""
+
+#: .\templates\home.html:24
+msgid ""
+"Professional service for air conditioning, heating, refrigeration, ice "
+"machines, and preventive maintenance."
+msgstr ""
+
+#: .\templates\home.html:28
+msgid ""
+"Advanced Diagnostics • Preventive Maintenance • Emergency Repairs • Energy "
+"Optimization"
+msgstr ""
+
+#: .\templates\home.html:35
+msgid "Request a Quote"
+msgstr ""
+
+#: .\templates\home.html:48
+msgid "Our Core Services"
+msgstr ""
+
+#: .\templates\home.html:51
+msgid "Specialized technical solutions for commercial and industrial systems."
+msgstr ""
+
+#: .\templates\home.html:64
+msgid "Installation and maintenance of air conditioning systems."
+msgstr ""
+
+#: .\templates\home.html:67 .\templates\home.html:83 .\templates\home.html:99
+msgid "Learn more"
+msgstr ""
+
+#: .\templates\home.html:80
+msgid "Walk-in coolers and industrial refrigeration systems."
+msgstr ""
+
+#: .\templates\home.html:96
+msgid "Maintenance and repair of commercial ice equipment."
+msgstr ""
+
+#: .\templates\home.html:112
+msgid "Commercial Sectors That Trust Us"
+msgstr ""
+
+#: .\templates\home.html:115
+msgid ""
+"We guarantee the perfect temperature and infrastructure for all types of "
+"businesses and industries."
+msgstr ""
+
+#: .\templates\home.html:123
+msgid "Offices & Corporate"
+msgstr ""
+
+#: .\templates\home.html:124
+msgid ""
+"Optimal climate control to ensure the comfort and productivity of your team."
+msgstr ""
+
+#: .\templates\home.html:130
+msgid "Restaurants & Kitchens"
+msgstr ""
+
+#: .\templates\home.html:131
+#, python-format
+msgid ""
+"Exhaust systems, refrigeration, and ice machines operating at 100%% without "
+"downtime."
+msgstr ""
+
+#: .\templates\home.html:137
+msgid "Clinics & Hospitals"
+msgstr ""
+
+#: .\templates\home.html:138
+msgid ""
+"Strict control of ambient temperature and critical preservation of medical "
+"supplies."
+msgstr ""
+
+#: .\templates\home.html:144
+msgid "Supermarkets & Retail"
+msgstr ""
+
+#: .\templates\home.html:145
+msgid "Stable cold rooms and refrigerated displays to prevent product loss."
+msgstr ""
+
+#: .\templates\home.html:158
+msgid "How Do We Work?"
+msgstr ""
+
+#: .\templates\home.html:159
+msgid ""
+"A streamlined and transparent process designed to solve your technical "
+"issues without wasting time."
+msgstr ""
+
+#: .\templates\home.html:167
+msgid ""
+"Write or call us. We will schedule a technical onsite visit immediately "
+"based on your urgency."
+msgstr ""
+
+#: .\templates\home.html:173
+msgid "Diagnosis"
+msgstr ""
+
+#: .\templates\home.html:174
+msgid ""
+"Our certified technicians evaluate the equipment on-site and locate the root "
+"cause of the failure."
+msgstr ""
+
+#: .\templates\home.html:180
+msgid "Fair Quote"
+msgstr ""
+
+#: .\templates\home.html:181
+msgid ""
+"We present a transparent, detailed budget proposal free of any hidden "
+"charges."
+msgstr ""
+
+#: .\templates\home.html:187
+msgid "Solution & Warranty"
+msgstr ""
+
+#: .\templates\home.html:188
+msgid ""
+"We perform the repair with original spare parts and provide full warranty "
+"coverage backup."
+msgstr ""
+
+#: .\templates\home.html:200
+msgid "Why Choose Us"
+msgstr ""
+
+#: .\templates\home.html:209
+msgid "Honest and professional service"
+msgstr ""
+
+#: .\templates\home.html:216
+msgid "Clear diagnosis"
+msgstr ""
+
+#: .\templates\home.html:223
+msgid "Clean and responsible work"
+msgstr ""
+
+#: .\templates\home.html:230
+msgid "Residential and commercial support"
+msgstr ""
+
+#: .\templates\home.html:237
+msgid "Commitment to quality"
+msgstr ""
+
+#: .\templates\home.html:244
+msgid "Efficient and durable solutions"
+msgstr ""

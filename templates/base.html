@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="language" content="en">
+    <meta http-equiv="content-language" content="en">
+
+    <title>{% block title %}Nova Solutions LLC{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800 m-0 p-0">
+
+<header class="shadow-lg" style="margin-top: 0 !important;">
+
+    <div class="bg-gradient-to-r from-blue-900 to-sky-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+
+            <div class="flex items-center">
+                <img
+                    src="{% static 'img/eeuu.png' %}"
+                    alt="Nova Solutions LLC Logo"
+                    class="h-24 sm:h-36 w-auto object-contain"
+                >
+            </div>
+
+            <div class="text-center sm:text-right">
+                <p class="text-white font-semibold text-lg sm:text-xl">
+                    📞 571-277-6854
+                </p>
+                <p class="text-sky-100 text-base sm:text-lg break-all">
+                    ✉ novasolutionshvac@gmail.com
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="bg-blue-900 text-white border-t border-sky-400 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-16 sm:h-auto">
+            
+            <div class="hidden md:flex">
+                <a href="{% url 'home' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                   Home
+                </a>
+
+                <a href="{% url 'about' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                   About
+                </a>
+
+                <a href="{% url 'services' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                   Services
+                </a>
+
+                <a href="{% url 'contact' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                   Contact
+                </a>
+            </div>
+
+            <div class="flex md:hidden w-full justify-between items-center">
+                <span class="text-lg font-bold tracking-wide">Nova Solutions</span>
+                <button id="mobile-menu-btn" type="button" class="text-white hover:text-sky-300 focus:outline-none p-2" aria-label="Toggle menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path id="menu-icon-open" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        <path id="menu-icon-close" class="hidden" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-sky-500 px-4 pt-2 pb-4 space-y-2">
+            <a href="{% url 'home' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Home</a>
+            <a href="{% url 'about' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">About</a>
+            <a href="{% url 'services' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Services</a>
+            <a href="{% url 'contact' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Contact</a>
+        </div>
+    </nav>
+
+</header>
+
+<main class="min-h-screen">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="bg-gradient-to-r from-blue-900 to-sky-600 text-white mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 text-center">
+
+        <img
+            src="{% static 'img/eeuu.png' %}"
+            alt="Nova Solutions LLC Logo"
+            class="h-16 mx-auto mb-4"
+        >
+
+        <h3 class="text-xl font-bold">
+            Nova Solutions LLC
+        </h3>
+
+        <p class="text-sky-200 text-sm sm:text-base">
+            HVAC • Refrigeration • Maintenance Services
+        </p>
+
+        <p class="mt-4 text-sm text-sky-100">
+            Reliable service. Professional solutions.
+        </p>
+
+        <div class="mt-6 border-t border-sky-400 pt-4 text-xs sm:text-sm">
+            © 2026 Nova Solutions LLC. All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-icon-open');
+    const closeIcon = document.getElementById('menu-icon-close');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        openIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

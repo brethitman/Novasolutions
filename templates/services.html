@@ -1,0 +1,271 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services | Nova Solutions LLC{% endblock %}
+
+{% block content %}
+
+<!-- ======================================================== -->
+<!-- HERO SECTION -->
+<!-- ======================================================== -->
+<section class="bg-gradient-to-r from-blue-900 to-sky-500 text-white py-24">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            Service Areas
+        </h1>
+        <p class="text-lg md:text-2xl max-w-3xl mx-auto text-sky-100">
+            Providing residential and commercial services in Maryland, Washington D.C., Virginia, and surrounding areas.
+        </p>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- MAIN SERVICES SECTION -->
+<!-- ======================================================== -->
+<section class="w-full bg-white py-24 text-slate-900 space-y-32">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-sky-600 mb-4">What Do We Offer for Your Business?</h2>
+        <p class="text-gray-600 text-base md:text-xl max-w-2xl mx-auto">We offer comprehensive technical coverage with certified personnel, cutting-edge tools, and top-tier customer service.</p>
+    </div>
+
+    <!-- HVAC SYSTEMS -->
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-10 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center border border-sky-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </div>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">HVAC Systems</h3>
+            </div>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-4xl">
+               Installation, repair, diagnostics, and maintenance for air conditioning systems. Inspection, repair, and maintenance of heating systems for homes and businesses.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Hvac1.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="HVAC 1">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4">
+                    <p class="text-white font-medium text-sm">Commercial Infrastructure</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Hvac2.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="HVAC 2">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Hvac3.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="HVAC 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMERCIAL REFRIGERATION -->
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-10 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center border border-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18m9-9H3m15.5-6.5l-13 13m0-13l13 13" /></svg>
+                </div>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">Commercial Refrigeration</h3>
+            </div>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-4xl">
+              Services for commercial refrigerators, walk-in coolers, freezers, and commercial kitchen equipment.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración9.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Refrigeration 1">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4">
+                    <p class="text-white font-medium text-sm">Cold Chain Monitoring</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración8.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Refrigeration 2">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración5.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Refrigeration 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- ICE MACHINES -->
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-10 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center border border-teal-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                </div>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">Ice Machines</h3>
+            </div>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-4xl">
+                Diagnostics, cleaning, maintenance, and repair services for commercial ice machines.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Ice1.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Ice Machine 1">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4">
+                    <p class="text-white font-medium text-sm">Hygienic Maintenance</p>
+                </div>
+            </div>   
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Ice2.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Ice Machine 2">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Ice3.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Ice Machine 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- PREVENTIVE MAINTENANCE -->
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-10 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center border border-green-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0px" /></svg>
+                </div>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">Preventive Maintenance</h3>
+            </div>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-4xl">
+                Monthly or customized periodic plans designed to prevent costly breakdowns and extend equipment lifespan.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Hvac7.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Maintenance 1">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4">
+                    <p class="text-white font-medium text-sm">Energy Optimization</p>
+                </div>
+            </div>   
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Ice4.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Maintenance 2">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Hvac8.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Maintenance 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- EMERGENCY SERVICES -->
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="mb-10 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center border border-red-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                </div>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-tight text-slate-900">Emergency Services</h3>
+            </div>
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-4xl">
+                Fast response troubleshooting for critical situations in HVAC and refrigeration systems.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración7.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Emergency 1">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4">
+                    <p class="text-white font-medium text-sm">24/7 Critical Support</p>
+                </div>
+            </div>   
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración5.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Emergency 2">
+            </div>
+            <div class="relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 group aspect-[4/3] shadow-md cursor-pointer">
+                <img src="{% static 'img/Refrigeración4.png' %}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 src-gallery" alt="Emergency 3">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ======================================================== -->
+<!-- WORK PROCESS SECTION -->
+<!-- ======================================================== -->
+<section class="bg-gray-50 py-20 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">How Do We Work?</h2>
+            <p class="text-gray-600 max-w-xl mx-auto">A transparent, structured process with zero unexpected surprises for your total peace of mind.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8 relative">
+            <div class="text-center">
+                <div class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">1</div>
+                <h4 class="text-lg font-bold text-slate-800 mb-2">Contact & Consultation</h4>
+                <p class="text-sm text-gray-600">We listen to your technical requirements and arrange an immediate inspection window.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">2</div>
+                <h4 class="text-lg font-bold text-slate-800 mb-2">Technical Assessment</h4>
+                <p class="text-sm text-gray-600">Our team evaluates the equipment conditions and prepares an honest diagnosis report.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">3</div>
+                <h4 class="text-lg font-bold text-slate-800 mb-2">Clear Quote</h4>
+                <p class="text-sm text-gray-600">We provide a transparent estimate breaking down materials, project duration, and fixed costs.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">4</div>
+                <h4 class="text-lg font-bold text-slate-800 mb-2">Execution & Warranty</h4>
+                <p class="text-sm text-gray-600">We carry out the work under strict safety standards and activate your warranty protection coverage.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- LIGHTBOX MODAL FOR FULL SCREEN PREVIEW -->
+<!-- ======================================================== -->
+<div id="imageModal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out p-4">
+    <button id="closeModal" class="absolute top-6 right-6 text-white text-4xl font-light hover:text-gray-300 transition focus:outline-none">&times;</button>
+    <img id="modalImg" class="max-w-full max-h-[90vh] rounded-lg object-contain transform scale-95 transition-transform duration-300 ease-in-out" src="" alt="Full Screen Preview">
+</div>
+
+<!-- ======================================================== -->
+<!-- INTERACTIVE JAVASCRIPT LOGIC -->
+<!-- ======================================================== -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const images = document.querySelectorAll(".src-gallery");
+
+        // Open light-box on gallery image clicks
+        images.forEach(img => {
+            img.addEventListener("click", function() {
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                
+                modal.classList.remove("opacity-0", "pointer-events-none");
+                setTimeout(() => {
+                    modalImg.classList.remove("scale-95");
+                }, 10);
+            });
+        });
+
+        // Hide full screen view function
+        function hideModal() {
+            modal.classList.add("opacity-0", "pointer-events-none");
+            modalImg.classList.add("scale-95");
+        }
+
+        // Close when clicking overlay backdrop background area
+        modal.addEventListener("click", function(e) {
+            if (e.target !== modalImg) {
+                hideModal();
+            }
+        });
+
+        // Close on escape hotkey push
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                hideModal();
+            }
+        });
+    });
+</script>
+
+{% endblock %}
