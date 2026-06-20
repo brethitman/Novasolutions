@@ -185,11 +185,12 @@
             <p class="text-slate-300 text-xs sm:text-sm md:text-base">{% translate "Find out how our customized preventive maintenance agreements can save your business thousands of dollars annually." %}</p>
         </div>
         <div class="shrink-0 w-full lg:w-auto">
-            <a href="/contact/" class="block text-center bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-md transition duration-300 text-sm sm:text-base">
+            <!-- CORREGIDO AQUÍ: Cambiado de /contact/ a la etiqueta dinámica de Django -->
+            <a href="{% url 'contact' %}" class="block text-center bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-md transition duration-300 text-sm sm:text-base">
                 {% translate "Speak with a Specialist" %}
             </a>
         </div>
-    </div>
+    </div> 
 </section>
 
 {% endblock %}

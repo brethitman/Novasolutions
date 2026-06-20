@@ -38,8 +38,7 @@
         </div>
     </div>
 </section>
-
-<!-- ======================================================== -->
+ <!-- ======================================================== -->
 <!-- MAIN SERVICES SECTION -->
 <!-- ======================================================== -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
@@ -63,7 +62,8 @@
                 <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
                     {% translate "Installation and maintenance of air conditioning systems." %}
                 </p>
-                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                <!-- ARREGLADO: Cambiado href="/services/" por {% url 'services' %} -->
+                <a href="{% url 'services' %}" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
                     {% translate "Learn more" %}
                 </a>
             </div>
@@ -79,7 +79,8 @@
                 <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
                     {% translate "Walk-in coolers and industrial refrigeration systems." %}
                 </p>
-                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                <!-- ARREGLADO: Cambiado href="/services/" por {% url 'services' %} -->
+                <a href="{% url 'services' %}" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
                     {% translate "Learn more" %}
                 </a>
             </div>
@@ -95,14 +96,14 @@
                 <p class="text-xs sm:text-sm md:text-gray-600 mb-5 sm:mb-6">
                     {% translate "Maintenance and repair of commercial ice equipment." %}
                 </p>
-                <a href="/services/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
+                <!-- ARREGLADO: Cambiado href="/services/" por {% url 'services' %} -->
+                <a href="{% url 'services' %}" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl transition text-xs sm:text-sm md:text-base">
                     {% translate "Learn more" %}
                 </a>
             </div>
         </div>
     </div>
 </section>
-
 <!-- ======================================================== -->
 <!-- COMMERCIAL SECTORS SECTION -->
 <!-- ======================================================== -->
