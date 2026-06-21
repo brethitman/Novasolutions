@@ -1,12 +1,16 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en" style="margin: 0; padding: 0;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="language" content="en">
-    <meta http-equiv="content-language" content="en">
+    {% get_current_language as LANGUAGE_CODE %}
+    <meta name="language" content="{{ LANGUAGE_CODE }}">
+    <meta http-equiv="content-language" content="{{ LANGUAGE_CODE }}">
+
+    <link rel="icon" type="image/png" href="{% static 'img/eeuu.png' %}">
 
     <title>{% block title %}Nova Solutions LLC{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -41,26 +45,43 @@
     <nav class="bg-blue-900 text-white border-t border-sky-400 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-16 sm:h-auto">
             
-            <div class="hidden md:flex">
-                <a href="{% url 'home' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
-                   Home
-                </a>
-
-                <a href="{% url 'about' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
-                   About
-                </a>
-
-                <a href="{% url 'services' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
-                   Services
-                </a>
-
-                <a href="{% url 'contact' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
-                   Contact
-                </a>
+            <div class="hidden md:flex items-center w-full justify-between">
+                <div class="flex">
+                    <a href="{% url 'home' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                        {% translate "Home" %}
+                    </a>
+                    <a href="{% url 'about' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                        {% translate "About" %}
+                    </a>
+                    <a href="{% url 'services' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                        {% translate "Services" %}
+                    </a>
+                    <a href="{% url 'contact' %}" class="px-6 lg:px-8 py-5 hover:bg-sky-500 transition duration-300 text-lg lg:text-xl font-semibold">
+                        {% translate "Contact" %}
+                    </a>
+                </div>
+                
+                <div class="px-6 py-5">
+                    <form action="{% url 'set_language' %}" method="post" class="inline">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.path }}">
+                        {% if LANGUAGE_CODE == 'en' %}
+                            <input type="hidden" name="language" value="es">
+                            <button type="submit" class="bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded transition duration-300 text-sm flex items-center gap-2">
+                                Español 🇪🇸
+                            </button>
+                        {% else %}
+                            <input type="hidden" name="language" value="en">
+                            <button type="submit" class="bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded transition duration-300 text-sm flex items-center gap-2">
+                                English 🇬🇧
+                            </button>
+                        {% endif %}
+                    </form>
+                </div>
             </div>
 
             <div class="flex md:hidden w-full justify-between items-center">
-                <span class="text-lg font-bold tracking-wide">Nova Solutions</span>
+                <span class="text-lg font-bold tracking-wide">Nova Solutions Llc.</span>  
                 <button id="mobile-menu-btn" type="button" class="text-white hover:text-sky-300 focus:outline-none p-2" aria-label="Toggle menu">
                     <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
                         <path id="menu-icon-open" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
@@ -72,10 +93,36 @@
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-sky-500 px-4 pt-2 pb-4 space-y-2">
-            <a href="{% url 'home' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Home</a>
-            <a href="{% url 'about' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">About</a>
-            <a href="{% url 'services' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Services</a>
-            <a href="{% url 'contact' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">Contact</a>
+            <a href="{% url 'home' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">
+                {% translate "Home" %}
+            </a>
+            <a href="{% url 'about' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">
+                {% translate "About" %}
+            </a>
+            <a href="{% url 'services' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">
+                {% translate "Services" %}
+            </a>
+            <a href="{% url 'contact' %}" class="block px-3 py-2 rounded-md text-base font-semibold hover:bg-sky-500 transition">
+                {% translate "Contact" %}
+            </a>
+            
+            <div class="pt-2 border-t border-blue-800">
+                <form action="{% url 'set_language' %}" method="post" class="block w-full">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.path }}">
+                    {% if LANGUAGE_CODE == 'en' %}
+                        <input type="hidden" name="language" value="es">
+                        <button type="submit" class="w-full text-center bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-3 rounded transition text-base">
+                            Cambiar a Español 🇪🇸
+                        </button>
+                    {% else %}
+                        <input type="hidden" name="language" value="en">
+                        <button type="submit" class="w-full text-center bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-3 rounded transition text-base">
+                            Switch to English 🇬🇧
+                        </button>
+                    {% endif %}
+                </form>
+            </div>
         </div>
     </nav>
 
